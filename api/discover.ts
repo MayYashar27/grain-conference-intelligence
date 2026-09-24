@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleDiscover } from '../server/handleDiscover';
+import { handleDiscover } from '../server/handleDiscover.js';
 
 /**
  * POST /api/discover — AI-powered conference discovery.

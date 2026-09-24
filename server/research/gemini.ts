@@ -7,8 +7,8 @@
  * a valid answer. Relationship stage/momentum are computed elsewhere (internal).
  */
 import { GoogleGenAI } from '@google/genai';
-import { GRAIN_CONTEXT } from '../discovery/businessContext';
-import { RESEARCH_RESPONSE_SCHEMA, type RawResearch } from './schema';
+import { GRAIN_CONTEXT } from '../discovery/businessContext.js';
+import { RESEARCH_RESPONSE_SCHEMA, type RawResearch } from './schema.js';
 
 const MODEL = process.env.GEMINI_MODEL || 'gemini-3.6-flash';
 

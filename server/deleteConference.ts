@@ -3,7 +3,7 @@
  * Interactions that referenced this conference have their conference_id set to
  * null by the FK (they become direct / non-conference), so history is preserved.
  */
-import { getServiceClient, ServiceConfigError } from './supabaseService';
+import { getServiceClient, ServiceConfigError } from './supabaseService.js';
 
 export interface HandlerResult {
   status: number;

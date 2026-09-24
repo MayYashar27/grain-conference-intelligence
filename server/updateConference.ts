@@ -5,7 +5,7 @@
  * caller is told to re-enrich — so we never leave scoring/evidence that describes
  * a different event.
  */
-import { getServiceClient, ServiceConfigError } from './supabaseService';
+import { getServiceClient, ServiceConfigError } from './supabaseService.js';
 
 export interface HandlerResult {
   status: number;

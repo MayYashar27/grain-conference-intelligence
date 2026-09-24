@@ -5,7 +5,7 @@
  * either KEEPs the current value (clear the flag) or UPDATEs the Contact to the
  * new value. Historical interaction.company_name_at_time is NEVER touched.
  */
-import { getServiceClient, ServiceConfigError } from './supabaseService';
+import { getServiceClient, ServiceConfigError } from './supabaseService.js';
 
 export interface HandlerResult {
   status: number;

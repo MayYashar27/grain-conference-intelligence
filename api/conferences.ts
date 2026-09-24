@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCreateConference } from '../server/createConference';
+import { handleCreateConference } from '../server/createConference.js';
 
 /**
  * POST /api/conferences — create a conference.

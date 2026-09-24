@@ -7,7 +7,7 @@
  *  - sparse/empty notes yield INSUFFICIENT_EVIDENCE, never invented intent
  *  - Stage = where the relationship is; Momentum = its direction (kept separate)
  */
-import type { RelationshipAssessment } from '../types/research';
+import type { RelationshipAssessment } from '../types/research.js';
 
 export interface RelInteraction {
   occurredAt: string;

@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleUpdateConference } from '../server/updateConference';
+import { handleUpdateConference } from '../server/updateConference.js';
 
 /** POST /api/conference-update — edit metadata; may invalidate + flag re-enrich. */
 export default async function handler(req: VercelRequest, res: VercelResponse) {

@@ -8,7 +8,7 @@
  * Then a match on ANY of: shared distinctive acronym · strong multi-token name
  * overlap · shared official domain + same city · same city+country + near dates.
  */
-import type { Conference } from '../../src/types/conference';
+import type { Conference } from '../../src/types/conference.js';
 
 /** Uppercase tokens that are geographic/generic, not event-identifying acronyms. */
 const GENERIC_ACRONYMS = new Set([

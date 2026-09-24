@@ -3,8 +3,8 @@
  * phone number would collide with a DIFFERENT existing contact's normalized
  * phone, it returns a 409 conflict instead of silently merging.
  */
-import { getServiceClient, ServiceConfigError } from './supabaseService';
-import { normalizePhone, isUsablePhone } from '../src/lib/phone';
+import { getServiceClient, ServiceConfigError } from './supabaseService.js';
+import { normalizePhone, isUsablePhone } from '../src/lib/phone.js';
 
 export interface HandlerResult {
   status: number;

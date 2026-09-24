@@ -4,11 +4,11 @@
  * Conferences → candidates. No scoring or DB writes happen here; scoring is the
  * client's existing engine and persistence only happens on human Approve.
  */
-import type { DiscoveryFilters } from './discovery/businessContext';
-import { runGeminiDiscovery, MAX_CANDIDATES, GeminiConfigError, GeminiError } from './discovery/gemini';
-import { validateCandidates } from './discovery/validate';
-import { filterDuplicates, type DedupRecord } from './discovery/dedup';
-import { getServiceClient, ServiceConfigError } from './supabaseService';
+import type { DiscoveryFilters } from './discovery/businessContext.js';
+import { runGeminiDiscovery, MAX_CANDIDATES, GeminiConfigError, GeminiError } from './discovery/gemini.js';
+import { validateCandidates } from './discovery/validate.js';
+import { filterDuplicates, type DedupRecord } from './discovery/dedup.js';
+import { getServiceClient, ServiceConfigError } from './supabaseService.js';
 
 export interface HandlerResult {
   status: number;

@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleDeleteLead } from '../server/deleteLead';
+import { handleDeleteLead } from '../server/deleteLead.js';
 
 /** POST /api/delete-lead — delete a contact (cascades interactions + research). */
 export default async function handler(req: VercelRequest, res: VercelResponse) {

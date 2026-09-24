@@ -8,16 +8,16 @@
  * Identity fields (name, dates, city, country, url) are user-owned and never
  * overwritten by enrichment. Unsupported fields remain null (evidence-first).
  */
-import { getServiceClient, ServiceConfigError } from './supabaseService';
+import { getServiceClient, ServiceConfigError } from './supabaseService.js';
 import {
   runGeminiEnrichment,
   GeminiConfigError,
   GeminiError,
   type EnrichTarget,
-} from './discovery/gemini';
-import { toDimension, deriveConfidence, isValidUrl } from './discovery/validate';
-import type { RawCandidate } from './discovery/schema';
-import type { DimensionAssessment, DimensionKey } from '../src/types/conference';
+} from './discovery/gemini.js';
+import { toDimension, deriveConfidence, isValidUrl } from './discovery/validate.js';
+import type { RawCandidate } from './discovery/schema.js';
+import type { DimensionAssessment, DimensionKey } from '../src/types/conference.js';
 
 export interface HandlerResult {
   status: number;

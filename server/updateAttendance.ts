@@ -4,7 +4,7 @@
  * write under RLS. Updates ONLY the attendance_status column — never touches
  * Fit/Tier/dimensions.
  */
-import { getServiceClient, ServiceConfigError } from './supabaseService';
+import { getServiceClient, ServiceConfigError } from './supabaseService.js';
 
 export interface HandlerResult {
   status: number;

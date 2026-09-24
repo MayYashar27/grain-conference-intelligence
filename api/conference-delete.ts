@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleDeleteConference } from '../server/deleteConference';
+import { handleDeleteConference } from '../server/deleteConference.js';
 
 /** POST /api/conference-delete — delete a conference (service-role only). */
 export default async function handler(req: VercelRequest, res: VercelResponse) {

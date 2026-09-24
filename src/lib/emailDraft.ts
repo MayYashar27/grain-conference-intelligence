@@ -4,7 +4,7 @@
  * The server feeds these facts to the model with strict "do not fabricate" rules,
  * so the guardrail (what the model is allowed to know) is deterministic and testable.
  */
-import type { LeadResearch, RelationshipAssessment } from '../types/research';
+import type { LeadResearch, RelationshipAssessment } from '../types/research.js';
 
 export interface DraftInteraction {
   note: string | null;

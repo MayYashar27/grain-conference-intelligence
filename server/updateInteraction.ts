@@ -2,7 +2,7 @@
  * Server-side interaction edit (Phase 4A): the note and/or the conference
  * association. Setting conferenceId to null makes it a non-conference interaction.
  */
-import { getServiceClient, ServiceConfigError } from './supabaseService';
+import { getServiceClient, ServiceConfigError } from './supabaseService.js';
 
 export interface HandlerResult {
   status: number;

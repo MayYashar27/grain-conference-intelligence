@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleUpdateAttendance } from '../server/updateAttendance';
+import { handleUpdateAttendance } from '../server/updateAttendance.js';
 
 /**
  * POST /api/attendance — set a conference's planning attendance status.

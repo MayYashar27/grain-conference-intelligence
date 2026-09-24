@@ -5,9 +5,9 @@
  * safely against the normalized_phone UNIQUE constraint so two near-simultaneous
  * submissions never create duplicate contacts.
  */
-import { getServiceClient, ServiceConfigError } from './supabaseService';
-import { normalizePhone, isUsablePhone } from '../src/lib/phone';
-import { sameText } from '../src/lib/contactIdentity';
+import { getServiceClient, ServiceConfigError } from './supabaseService.js';
+import { normalizePhone, isUsablePhone } from '../src/lib/phone.js';
+import { sameText } from '../src/lib/contactIdentity.js';
 
 export interface HandlerResult {
   status: number;

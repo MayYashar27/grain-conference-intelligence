@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleUpdateContact } from '../server/updateContact';
-import { handleUpdateInteraction } from '../server/updateInteraction';
+import { handleUpdateContact } from '../server/updateContact.js';
+import { handleUpdateInteraction } from '../server/updateInteraction.js';
 
 /**
  * POST /api/contacts — edit a lead entity by id + patch.

@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleResolveContactReview } from '../server/resolveContactReview';
+import { handleResolveContactReview } from '../server/resolveContactReview.js';
 
 /** POST /api/resolve-contact-review — Keep/Update a pending company/name review. */
 export default async function handler(req: VercelRequest, res: VercelResponse) {

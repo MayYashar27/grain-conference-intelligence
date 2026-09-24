@@ -8,10 +8,10 @@
  * Scoring/relationship interpretation stays deterministic; Gemini only researches
  * public facts. GEMINI_API_KEY and the service-role key stay server-side.
  */
-import { getServiceClient, ServiceConfigError } from './supabaseService';
-import { analyzeRelationship, type RelInteraction } from '../src/lib/relationship';
-import { runLeadResearch, GeminiConfigError, GeminiError } from './research/gemini';
-import { validatePublicResearch } from './research/validate';
+import { getServiceClient, ServiceConfigError } from './supabaseService.js';
+import { analyzeRelationship, type RelInteraction } from '../src/lib/relationship.js';
+import { runLeadResearch, GeminiConfigError, GeminiError } from './research/gemini.js';
+import { validatePublicResearch } from './research/validate.js';
 
 export interface HandlerResult {
   status: number;

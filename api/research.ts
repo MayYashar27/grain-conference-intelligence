@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleResearchLead } from '../server/researchLead';
+import { handleResearchLead } from '../server/researchLead.js';
 
 /** POST /api/research — run/refresh AI lead research for a contact (server-only). */
 export default async function handler(req: VercelRequest, res: VercelResponse) {

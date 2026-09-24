@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleEnrichConference } from '../server/enrichConference';
+import { handleEnrichConference } from '../server/enrichConference.js';
 
 /** POST /api/conference-enrich — research + persist evidence/scoring inputs. */
 export default async function handler(req: VercelRequest, res: VercelResponse) {

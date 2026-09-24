@@ -13,8 +13,8 @@ import type {
   EvidenceConfidence,
   Region,
   Vertical,
-} from '../../src/types/conference';
-import type { RawCandidate, RawDimension } from './schema';
+} from '../../src/types/conference.js';
+import type { RawCandidate, RawDimension } from './schema.js';
 
 const REGIONS = [
   'North America',

@@ -17,8 +17,8 @@ import type {
   EvidencedItem,
   StackItem,
   ResearchSource,
-} from '../../src/types/research';
-import type { RawResearch } from './schema';
+} from '../../src/types/research.js';
+import type { RawResearch } from './schema.js';
 
 export type PublicResearch = Omit<LeadResearch, 'relationship' | 'researchedAt'>;
 

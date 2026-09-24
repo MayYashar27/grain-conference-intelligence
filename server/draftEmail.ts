@@ -7,10 +7,10 @@
  * or buying intent. The salesperson reviews/edits the draft; nothing is sent.
  */
 import { GoogleGenAI, Type } from '@google/genai';
-import { getServiceClient, ServiceConfigError } from './supabaseService';
-import { analyzeRelationship } from '../src/lib/relationship';
-import { buildDraftContext, type DraftInteraction } from '../src/lib/emailDraft';
-import type { LeadResearch } from '../src/types/research';
+import { getServiceClient, ServiceConfigError } from './supabaseService.js';
+import { analyzeRelationship } from '../src/lib/relationship.js';
+import { buildDraftContext, type DraftInteraction } from '../src/lib/emailDraft.js';
+import type { LeadResearch } from '../src/types/research.js';
 
 export interface HandlerResult {
   status: number;

@@ -3,7 +3,7 @@
  * its interactions and persisted research via the FK `on delete cascade` rules
  * (see migrations 004 + 005). The anon key cannot delete (no RLS delete policy).
  */
-import { getServiceClient, ServiceConfigError } from './supabaseService';
+import { getServiceClient, ServiceConfigError } from './supabaseService.js';
 
 export interface HandlerResult {
   status: number;

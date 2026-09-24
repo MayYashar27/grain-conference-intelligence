@@ -16,8 +16,8 @@ import {
   DIMENSION_GUIDE,
   describeFilters,
   type DiscoveryFilters,
-} from './businessContext';
-import { DISCOVERY_RESPONSE_SCHEMA, type RawCandidate } from './schema';
+} from './businessContext.js';
+import { DISCOVERY_RESPONSE_SCHEMA, type RawCandidate } from './schema.js';
 
 const MODEL = process.env.GEMINI_MODEL || 'gemini-3.6-flash';
 // Pass 2 (structuring) does NO grounding — it only reformats pass-1's already-
