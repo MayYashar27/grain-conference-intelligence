@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+
+/*
+  Grain Conference Intelligence — design tokens.
+
+  TWO SEPARATE colour systems, intentionally kept apart:
+
+  1. BRAND (Grain identity, NON-semantic chrome) — `grain` (deep indigo #2b3674).
+     Used for CTAs, nav accents, the logo, focus rings and decorative accents.
+     Aligns the app with grainfinance.com WITHOUT touching product meaning.
+
+  2. SEMANTIC (product meaning, NEVER a brand colour) — these communicate state
+     and must not be reinterpreted by branding:
+       • Conference Fit: `brand` teal = Strong Fit, sky = Good, amber = Moderate,
+         slate = Low  (see lib/ui.ts TIER_STYLE)
+       • Calendar Attendance: teal = Attending, violet = Undecided, red = Not
+         attending  (see lib/attendanceVisual.ts)
+       • Follow-up Priority, and warning/error/success semantics.
+     The `brand` teal scale below is a SEMANTIC colour (positive / Strong Fit) and
+     is deliberately left unchanged.
+*/
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
+    sans-serif;
+
+  /* Grain BRAND — deep indigo (#2b3674). Chrome only, never a product state. */
+  --color-grain-50: #eef1f9;
+  --color-grain-100: #dce1f2;
+  --color-grain-200: #bcc5e6;
+  --color-grain-300: #929fd4;
+  --color-grain-400: #6675bd;
+  --color-grain-500: #454f9e;
+  --color-grain-600: #2b3674;
+  --color-grain-700: #232c60;
+  --color-grain-800: #1d2450;
+  --color-grain-900: #171d40;
+  --color-grain-950: #0e1128;
+
+  /* SEMANTIC teal — Strong Fit / positive. NOT the brand colour. Left unchanged. */
+  --color-brand-50: #ecfdf7;
+  --color-brand-100: #d1faec;
+  --color-brand-200: #a6f2d9;
+  --color-brand-300: #6ee4c1;
+  --color-brand-400: #34cda4;
+  --color-brand-500: #12b088;
+  --color-brand-600: #068f70;
+  --color-brand-700: #05725c;
+  --color-brand-800: #085b4a;
+  --color-brand-900: #084b3f;
+  --color-brand-950: #032b25;
+
+  /* Neutral surface scale (cool slate) */
+  --color-ink-50: #f7f8fa;
+  --color-ink-100: #eef1f5;
+  --color-ink-200: #e2e7ee;
+  --color-ink-300: #cbd3df;
+  --color-ink-400: #97a3b6;
+  --color-ink-500: #64748b;
+  --color-ink-600: #475467;
+  --color-ink-700: #334155;
+  --color-ink-800: #1e293b;
+  --color-ink-900: #0f172a;
+  --color-ink-950: #080d18;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-ink-50);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Numeric emphasis — scores read as data, not prose. */
+.tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1, 'cv01' 1;
+}
+
+/* Subtle, consistent focus ring for keyboard users — Grain brand indigo. */
+:focus-visible {
+  outline: 2px solid var(--color-grain-500);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Refined scrollbars where supported. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-ink-300) transparent;
+}

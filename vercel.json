@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/discover.ts": { "maxDuration": 300 }
+  },
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
